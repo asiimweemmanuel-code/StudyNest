@@ -4,97 +4,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StudyNest News</title>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
 }
+
+/* HEADER */
 header {
-  background: #111;
+  background: #0b3c5d;
   color: white;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* NAV */
 nav {
-  background: #222;
-  padding: 10px;
-  text-align: center;
+  background: #062f4f;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 nav a {
   color: white;
-  margin: 0 10px;
+  padding: 12px 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 14px;
 }
+
+nav a:hover {
+  background: #0b3c5d;
+}
+
+/* MAIN */
 .container {
+  max-width: 900px;
+  margin: auto;
   padding: 15px;
 }
+
+/* FEATURED */
+.featured {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.featured h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+/* ARTICLES */
 .article {
   background: white;
   padding: 15px;
+  border-radius: 8px;
   margin-bottom: 15px;
-  border-radius: 5px;
 }
-.article h2 {
+
+.article h3 {
   margin-top: 0;
+  font-size: 18px;
 }
-.footer {
-  background: #111;
+
+.article small {
+  color: #777;
+  font-size: 12px;
+}
+
+.article p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background: #062f4f;
   color: white;
   text-align: center;
-  padding: 10px;
-  font-size: 14px;
+  padding: 15px;
+  font-size: 13px;
+  margin-top: 30px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>📰 StudyNest News</h1>
-  <p>Latest news, simply explained</p>
+  <p>Trusted news, clearly explained</p>
 </header>
 
 <nav>
   <a href="#">Home</a>
-  <a href="#">World</a>
   <a href="#">Uganda</a>
+  <a href="#">World</a>
   <a href="#">Sports</a>
-  <a href="#">Tech</a>
+  <a href="#">Technology</a>
 </nav>
 
 <div class="container">
 
-  <div class="article">
-    <h2>Breaking News: Example Headline</h2>
-    <p><small>Posted on: Today</small></p>
+  <div class="featured">
+    <h2>Breaking News</h2>
+    <small>Posted today</small>
     <p>
-      This is a short summary of the news. Write the key facts in your own words.
-      Keep it simple and clear so everyone can understand.
+      Write your most important story here. Keep it short, clear, and factual.
+      This section is for the biggest headline of the day.
     </p>
   </div>
 
   <div class="article">
-    <h2>Sports Update</h2>
-    <p><small>Posted on: Today</small></p>
+    <h3>Uganda News</h3>
+    <small>Posted today</small>
     <p>
-      Write sports news here — football, local games, or international matches.
+      Share local news from Uganda in your own words. Explain what happened,
+      where, and why it matters.
     </p>
   </div>
 
   <div class="article">
-    <h2>Technology News</h2>
-    <p><small>Posted on: Today</small></p>
+    <h3>Sports Update</h3>
+    <small>Posted today</small>
     <p>
-      Share tech news like new phones, apps, or internet updates.
+      Football, athletics, or school sports — keep fans informed with short updates.
+    </p>
+  </div>
+
+  <div class="article">
+    <h3>Technology</h3>
+    <small>Posted today</small>
+    <p>
+      Phones, apps, internet, or AI — explain tech news in a simple way.
     </p>
   </div>
 
 </div>
 
-<div class="footer">
-  © 2025 StudyNest News | Built by Asiimwe
-</div>
+<footer>
+  © 2025 StudyNest News | Independent Digital News
+</footer>
 
 </body>
 </html>
