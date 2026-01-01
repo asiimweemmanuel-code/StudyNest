@@ -131,8 +131,10 @@ footer {
 
   <div class="featured">
     <h2>Breaking News</h2>
-    <small>Posted today</small>
-    <p>
+    <small>Posted on <span id="date"></span></small>
+    <p> <script>
+document.getElementById("date").innerText = new Date().toDateString();
+</script>
       <p>
   Government has announced new measures aimed at reducing the rising cost of living as citizens continue to feel pressure from high prices of basic goods.
 </p>
